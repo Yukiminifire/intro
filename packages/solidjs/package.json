@@ -1,0 +1,29 @@
+{
+  "name": "example-solidjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "serve": "vite --port 5175 --host",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "postcss": "^8.5.8",
+    "postcss-nested": "^7.0.2",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "vite": "8.0.3",
+    "vite-plugin-solid": "^2.11.11"
+  },
+  "dependencies": {
+    "@template/template": "workspace:*",
+    "comlink": "^4.4.2",
+    "solid-devtools": "^0.34.5",
+    "solid-js": "^1.9.12"
+  }
+}

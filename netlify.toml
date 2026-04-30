@@ -1,0 +1,16 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build.environment]
+  NODE_VERSION = "lts/*"
+
+[build]
+  base = "."
+  command = "pnpm install --store=node_modules/.pnpm-store && pnpm build"
+  publish = "packages/solidjs/dist"
+
+# The following redirect is intended for use with most SPAs 
+# that handle routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

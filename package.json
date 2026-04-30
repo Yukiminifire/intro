@@ -1,0 +1,38 @@
+{
+  "name": "template-repo",
+  "version": "0.0.0",
+  "description": "🎬 A pnpm template repo, typescript support out of box with vite and jiti.",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@types/node": "^25.5.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1",
+    "pretty-quick": "^4.2.2",
+    "typescript": "6.0.2",
+    "vitest": "4.1.2",
+    "zx": "^8.8.5"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "update-dependencies": "pnpm --recursive update",
+    "update-dependencies-latest": "pnpm --recursive update --latest",
+    "serve": "pnpm run serve-solidjs",
+    "serve-solidjs": "pnpm --filter=./packages/solidjs run serve",
+    "serve-react": "pnpm --filter=./packages/react run serve",
+    "build": "pnpm --filter=./packages/solidjs run build",
+    "dev": "pnpm --filter=./packages/node run dev",
+    "test": "vitest --run"
+  },
+  "keywords": [],
+  "author": "Akimotorakiyu",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/types": "^20.5.0",
+    "lint-staged": "^16.4.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

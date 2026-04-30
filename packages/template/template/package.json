@@ -1,0 +1,13 @@
+{
+  "name": "@template/template",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@template/core": "workspace:*"
+  }
+}
